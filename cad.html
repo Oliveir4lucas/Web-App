@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cad.css">
+</head>
+<body>
+    <!--MENUS-->
+    <nav class="app-header">
+        <input type="checkbox" class="faketrigger"/>
+
+
+        <div class="menu-lines">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                
+                <li><a href="sobre.html">Sobre</a></li>
+                
+            </ul>
+    </nav>
+
+    <header class="site-header">
+        <nav class="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+               
+                <li><a href="sobre.html">Sobre</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <div class="titulos">
+        <h1 class="titulo">Cadastro</h1>
+    </div>
+
+    <div class="cad">
+        <div class="form-imagedesk">
+            <img src="Imagens/cadastro.svg" alt="">
+        </div>
+        <div class="form-imagmobile">
+            <img src="Imagens/cadMobile.svg" alt="">
+        </div>
+        <div class="form">
+            <form action="login.html">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Realize seu cadastro</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="login.html">Entrar</a></button>
+                    </div>
+                </div>
+
+                <div class="input-grupo">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+
+                    <div class="input-box"> 
+                     <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" placeholder="Digite sua idade" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="peso">Peso Atual (kg):</label>
+                    <input type="number" id="peso" name="peso" placeholder="Digite seu peso atual" required>
+                    </div>
+
+            
+                    <div class="input-box">
+                        <label for="altura">Altura (cm):</label>
+                    <input type="number" id="altura" name="altura" placeholder="Digite sua altura" required>
+                   </div>
+              
+                    
+                    <div class="input-box">
+                        <label for="pesoMeta">Meta de Peso (kg):</label>
+                    <input type="number" id="pesoMeta" name="pesoMeta" placeholder="Digite sua meta de peso" required>
+              
+                    </div>
+              
+            
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="confirmPassword">Confirme sua Senha</label>
+                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required>
+                        
+
+                    </div>
+
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Gênero</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="female" type="radio" name="gender">
+                            <label for="female">Feminino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="male" type="radio" name="gender">
+                            <label for="male">Masculino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="others" type="radio" name="gender">
+                            <label for="others">Não Binário</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="none" type="radio" name="gender">
+                            <label for="none">Outros</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="perfil.html">Cadastrar</a> </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+    <h2>Work Out</h2>
+    </div>
+    <p> © Desenvolvido por Lucas Oliveira - Todos os direitos reservados.</p>
+</footer>
+    
+</body>
+</html>

@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+   background-image: url(Imagens/backgroundDesk.svg);
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   font-family: 'Urbanist';
+}
+
+
+:root {
+   --cor--fundo: #141414;
+   --cor--hover: #2e2d2d;
+   --cor--primaria: #ffff;
+   --cor--hover2: #dc143c;
+   --cor--bgwhite: #E1E1E1;
+   --cor--primeira2: #740d21;
+}
+
+.app-header{
+    display: none;
+}
+
+.site-header {
+    background-color: transparent;
+    padding: 10px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin-left: 50px;
+ }
+
+ .menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+ }
+
+ .menu ul li a {
+    color: var(--cor--primaria);
+    font-size: 2.5vh;
+    text-decoration: none;
+    display:inline-flex;
+    padding: 7px;
+    transition: background 0.7s;
+ }
+
+ .menu ul li a:hover {
+    background-color: var(--cor--hover2);
+    width: 150px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+ }
+
+ .titulos{
+   height: 500px;
+ }
+
+ .titulo{
+   color: var(--cor--bgwhite);
+   font-family: urbanist;
+   text-align: center;
+ }
+
+ .edit{
+   justify-content: center;
+   margin-left: 25vh;
+   margin-right: 5vh;
+  }
+ 
+  .edit button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    color: #E1E1E1;
+    background-color: var(--cor--hover2);
+    padding: 0.62rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: urbanist;
+    font-weight: 600;
+ }
+ 
+ .edit button:hover {
+    background-color: #ec2222f1;
+ }
+
+ table {
+   width: 80%;
+   margin: 20px auto;
+   border-collapse: collapse;
+   border: 2px solid #2e2d2d;
+}
+
+th, td {
+   padding: 12px;
+   text-align: left;
+   border-bottom: 1px solid #2e2d2d;
+   color:#E1E1E1
+}
+
+th {
+   background-color: var(--cor--primeira2);
+   color: #fff;
+}
+
+tr:hover {
+   background-color: #f5f5f5;
+}
+
+
+ .site-footer{
+    background-color: transparent;
+   text-align: center;
+   color: #E1E1E1;
+}
+
+@media screen and (max-width: 400px){
+
+   h1{
+       text-align: center;
+       margin-bottom: -5px;
+       font-size: 22px
+     }
+   
+    h3{
+       display: flex;
+       margin-left: 10px;
+       text-align: center;
+       font-size: 14px;
+    }
+
+    .site-header {
+      display: none;
+    }
+
+    .app-header {
+       display: block;
+    }
+
+    .app-header .faketrigger{
+       position: absolute;
+       z-index: 1000;
+       width: 35px;
+       height: 35px;
+       opacity: 0%;
+   }
+
+   .app-header .menu-lines{
+       position: absolute;
+       z-index: 999;
+       width: 35px;
+       height: 35px;
+   }
+
+   .app-header{  
+       margin-left: 30px;
+       margin-top: 30px;
+     }
+
+   .app-header .menu-lines span{
+       display: block;
+       width: 35px;
+       height: 5px;
+       margin-bottom: 10px;
+       border-radius: 3px;
+       background-color: #E1E1E1;
+       transition: all ease .2s;
+   }
+
+   .app-header .faketrigger:checked ~ .menu-lines span{
+       background-color:#191717;
+   }
+
+   .app-header .faketrigger:checked ~ .menu-lines span:nth-child(1){
+       transform-origin: 0% 0%;
+       transform: rotate(45deg) scaleX(1.30);
+   }
+   .app-header .faketrigger:checked ~ .menu-lines span:nth-child(2){
+   opacity: 0%;
+   }
+
+   .app-header .faketrigger:checked ~ .menu-lines span:nth-child(3){
+       transform-origin: 0% 100%;
+       transform: rotate(-45deg) scaleX(1.30);
+   }
+
+   .app-header ul{
+       position: absolute;
+       z-index: 998;
+       left: 0;
+       top: -15px;
+       width: 200px;
+       height: calc(115vh - 80px);
+       padding-top: 80px;
+       background-color: #E1E1E1;
+       margin-left: -300px;
+       transition: all ease .2s;
+
+   }
+
+   .app-header .faketrigger:checked~ul {
+       margin-left: 0;
+}
+
+.app-header ul li{
+   padding: 10px 30px;
+}
+
+.app-header ul li a{
+   text-decoration: none;
+   color: #141414;
+   font-size: 18px;
+   transition: all ease .2s;
+}
+
+.app-header ul li a:hover {
+   background-color: var(--cor--hover2);
+}
+
+
+.titulos{
+   height: 50px;
+ }
+
+
+
+.site-footer{
+   display: none;
+}
+}
