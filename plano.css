@@ -64,7 +64,7 @@ body {
 
 .refe{
    margin-top: -50vh;
-   margin-left: 40px;
+   margin-left: 50px;
    margin-bottom: 60px;
  }
  .button-container {
@@ -155,7 +155,7 @@ body {
    color: #E1E1E1;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
 
    h1{
        text-align: center;

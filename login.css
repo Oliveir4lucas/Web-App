@@ -270,7 +270,7 @@ a{
    color: #E1E1E1;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
    body {
        margin: 0;
        padding: 0;
@@ -279,7 +279,8 @@ a{
    h1 {
       text-align: center;
       display: flex;
-      margin-left: 5em;
+      margin-left: 5.2em;
+      
    }
   
   
@@ -384,7 +385,7 @@ a{
        margin-bottom: -100vh;
        margin-top: -50vh;
        box-shadow: none;
-       margin-left: 6.5px;
+       margin-left: 8px;
    }
 
    .img-login {
@@ -413,9 +414,10 @@ a{
    }
 
    .site-footer {
-       display: flex;
+       display: none;
    }
 }
 
-  
+
+
 
