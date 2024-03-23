@@ -10,30 +10,20 @@ self.addEventListener('install', event => {
 
         './index.html',
 
-        './assets/css/bootstrap.min.css',
+        './assets/css/inicio.css',
 
-        './assets/js/bootstrap.min.js',
+        './assets/js/effects.js',
 
-        './assets/js/jquery.min.js',
-
-        './assets/js/popper.min.js',
-
-        './assets/img/background.png',
-        './assets/img/favicon.png',
-        './assets/img/logo.png',
-        './assets/img/icon_128.png',
-        './assets/img/icon_144.png',
-        './assets/img/icon_152.png',
-        './assets/img/icon_167.png',
-        './assets/img/icon_180.png',
-        './assets/img/icon_192.png',
-        './assets/img/icon_256.png',
-        './assets/img/icon_512.png',
-        './assets/img/formulas.JPG',
-
-        './assets/img/batman.jpeg',
-        './assets/img/chefao.jpeg',
-        './assets/img/leao.jpeg',
+       
+        // Novos ícones
+        './assets/img/icon-72x72.png',
+        './assets/img/icon-96x96.png',
+        './assets/img/icon-128x128.png',
+        './assets/img/icon-144x144.png',
+        './assets/img/icon-152x152.png',
+        './assets/img/icon-192x192.png',
+        './assets/img/icon-384x384.png',
+        './assets/img/icon-512x512.png',
       ]))
   );
 });
