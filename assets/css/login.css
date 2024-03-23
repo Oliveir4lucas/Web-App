@@ -1,11 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-   background-image: url(Imagens/backgroundDesk.svg);
+   background-image: url(/assets/img/backgroundDesk.svg);
    margin: 0;
    padding: 0;
    width: 100%;
    font-family: 'Urbanist';
+}
+
+.preloader.loaded {
+   opacity: 2;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor--fundo); /* Cor de fundo do preloader */
+    display: flex;
+    flex-direction: column; /* Coluna para alinhar verticalmente */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Garante que o preloader apareça sobre todo o conteúdo */
+    opacity: 0;
+   transition: opacity 1.5s ease;
+}
+
+.logo {
+    margin-bottom: 50px; /* Espaçamento entre o logo e o spinner */
+
+}
+
+.preloader img {
+    width: 200px; /* Ajuste o tamanho do logo conforme necessário */
+    height: auto;
+    opacity: 1; /* Começa com opacidade 1 */
+    transition: opacity 0.5s ease;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+    border: 5px solid #dc143c; /* Cor do spinner */
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite; /* Animação de rotação */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.content {
+    display: none; /* Oculta o conteúdo até que a página esteja totalmente carregada */
 }
 
 
@@ -270,6 +321,7 @@ a{
    color: #E1E1E1;
 }
 
+
 @media screen and (max-width: 430px) {
    body {
        margin: 0;
@@ -379,10 +431,10 @@ a{
  /*LOGIN*/
   
    .container-login {
-       width: 80%;
+       width:80%;
        height: auto;
        margin:0;
-       margin-bottom: -100vh;
+       margin-left: 15px;
        margin-top: -50vh;
        box-shadow: none;
        margin-left: 8px;

@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+   background-image: url(/assets/img/backgroundDesk.svg);
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   font-family: 'Urbanist';
+}
+
+.preloader.loaded {
+   opacity: 2;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor--fundo); /* Cor de fundo do preloader */
+    display: flex;
+    flex-direction: column; /* Coluna para alinhar verticalmente */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Garante que o preloader apareça sobre todo o conteúdo */
+    opacity: 0;
+   transition: opacity 1.5s ease;
+}
+
+.logo {
+    margin-bottom: 50px; /* Espaçamento entre o logo e o spinner */
+
+}
+
+.preloader img {
+    width: 200px; /* Ajuste o tamanho do logo conforme necessário */
+    height: auto;
+    opacity: 1; /* Começa com opacidade 1 */
+    transition: opacity 0.5s ease;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+    border: 5px solid #dc143c; /* Cor do spinner */
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite; /* Animação de rotação */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.content {
+    display: none; /* Oculta o conteúdo até que a página esteja totalmente carregada */
+}
+
+
+:root {
+   --cor--fundo: #141414;
+   --cor--hover: #2e2d2d;
+   --cor--primaria: #ffff;
+   --cor--hover2: #dc143c;
+   --cor--bgwhite: #E1E1E1;
+}
+
+.app-header{
+    display: none;
+}
+
+.site-header {
+    background-color: transparent;
+    padding: 10px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin-left: 50px;
+ }
+
+ .menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+ }
+
+ .menu ul li a {
+    color: var(--cor--primaria);
+    font-size: 2.5vh;
+    text-decoration: none;
+    display:inline-flex;
+    padding: 7px;
+    transition: background 0.7s;
+ }
+
+ .menu ul li a:hover {
+    background-color: var(--cor--hover2);
+    width: 150px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+ }
+
+ .logo{
+    margin-left: 90px;
+    margin-top: 250px;
+ }
+ 
+ .entrar-button button {
+    width: 300px;
+    margin-top: 2rem;
+    border: none;
+    background-color: var(--cor--hover2);
+    padding: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: urbanist;
+    margin-left: 45px;
+ }
+ 
+ .entrar-button button:hover {
+    background-color: #ec2222f1;
+ }
+ 
+ .entrar-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+ }
+
+ .cad-button button {
+    width: 300px;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: var(--cor--hover2);
+    padding: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: urbanist;
+    margin-left: 45px;
+ }
+ 
+ .cad-button button:hover {
+    background-color: #ec2222f1;
+ }
+ 
+ .cad-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+ }
+
+ .logar{
+    margin-top: 100px;
+ }
+
+ h3{
+    color:var(--cor--bgwhite);
+    text-align: center;
+    margin-top: 40px;
+  }
+
+.alt-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -28px;
+ }
+ 
+ .alt-login li{
+  list-style: none;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 7px;
+ 
+ }
+ 
+ .alt-login li img{
+    width: 80px;
+    cursor: pointer;
+ }
+ 
+ 
+
+ 
+
+
+
+

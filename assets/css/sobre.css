@@ -8,6 +8,38 @@ body {
    font-family: 'Urbanist';
 }
 
+.preloader {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #ffffff; /* Cor de fundo do preloader */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 9999; /* Garante que o preloader apareça sobre todo o conteúdo */
+}
+
+.spinner {
+   width: 50px;
+   height: 50px;
+   border: 5px solid #dc143c; /* Cor do spinner */
+   border-top-color: transparent;
+   border-radius: 50%;
+   animation: spin 1s linear infinite; /* Animação de rotação */
+}
+
+@keyframes spin {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(360deg); }
+}
+
+.content {
+   display: none; /* Oculta o conteúdo até que a página esteja totalmente carregada */
+}
+
+
 
 :root {
    --cor--fundo: #141414;
@@ -56,98 +88,11 @@ body {
    height: 500px;
  }
 
- .titulo{
+ .titulo, .info{
    color: var(--cor--bgwhite);
    font-family: urbanist;
    text-align: center;
  }
-
-.refe{
-   margin-top: -50vh;
-   margin-left: 50px;
-   margin-bottom: 60px;
- }
- .button-container {
-   display: flex;
- }
-
-.button1, .button2 {
-   color: white;
-   border: none;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 12px;
-   margin-top: 50px;
-   margin-right: 10px;
-   margin-bottom: 40px;
-   cursor: pointer;
-   border-radius: 4px;
-}
-
-.button1 {
-   width: 80%;
-   margin-left: -3vh;
-}
-
-
- 
-
-  .refe button {
-    width: 50%;
-    margin-top: 1rem;
-    border: none;
-    color: #E1E1E1;
-    background-color: var(--cor--hover2);
-    padding: 0.62rem;
-    border-radius: 20px;
-    cursor: pointer;
-    font-family: urbanist;
-    font-weight: 600;
- }
- 
- .refe button:hover {
-    background-color: #ec2222f1;
- }
-
- .card {
-   width: 300px;
-   border: 1px solid #ccc;
-   border-radius: 8px;
-   overflow: hidden;
-   margin-bottom: 15px;
-   color: #E1E1E1;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card img {
-   width: 100%;
-   height: auto;
-   border-bottom: 1px solid #ccc;
-}
-
-.card-content {
-   padding: 15px;
-}
-
-.card-title {
-   font-size: 1.2rem;
-   font-weight: bold;
-   margin-bottom: 10px;
-}
-
-.card-details-btn {
-   background-color: var(--cor--hover2);
-   color: white;
-   border: none;
-   padding: 8px 16px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 14px;
-   border-radius: 4px;
-   cursor: pointer;
-}
 
  .site-footer{
     background-color: transparent;
@@ -155,7 +100,7 @@ body {
    color: #E1E1E1;
 }
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 400px){
 
    h1{
        text-align: center;
@@ -256,6 +201,18 @@ body {
 
 .app-header ul li a:hover {
    background-color: var(--cor--hover2);
+}
+
+
+.titulos{
+   height: 100px;
+ }
+
+p{
+   color: var(--cor--bgwhite);
+   font-weight:600;
+   text-align: center;
+   
 }
 
 

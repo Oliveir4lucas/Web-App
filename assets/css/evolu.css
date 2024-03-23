@@ -8,6 +8,38 @@ body {
    font-family: 'Urbanist';
 }
 
+.preloader {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #ffffff; /* Cor de fundo do preloader */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 9999; /* Garante que o preloader apareça sobre todo o conteúdo */
+}
+
+.spinner {
+   width: 50px;
+   height: 50px;
+   border: 5px solid #dc143c; /* Cor do spinner */
+   border-top-color: transparent;
+   border-radius: 50%;
+   animation: spin 1s linear infinite; /* Animação de rotação */
+}
+
+@keyframes spin {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(360deg); }
+}
+
+.content {
+   display: none; /* Oculta o conteúdo até que a página esteja totalmente carregada */
+}
+
+
 
 :root {
    --cor--fundo: #141414;
@@ -15,7 +47,6 @@ body {
    --cor--primaria: #ffff;
    --cor--hover2: #dc143c;
    --cor--bgwhite: #E1E1E1;
-   --cor--primeira2: #740d21;
 }
 
 .app-header{
@@ -63,65 +94,41 @@ body {
    text-align: center;
  }
 
-
- .add{
-  justify-content: center;
-  margin-left: 25vh;
-  margin-right: 2vh;
- }
-
- .add button {
-   width: 100%;
-   margin-top: 2.5rem;
-   border: none;
+ p{
    color: #E1E1E1;
-   background-color: var(--cor--hover2);
-   padding: 0.62rem;
-   border-radius: 20px;
-   cursor: pointer;
-   font-family: urbanist;
-   font-weight: 600;
-}
-
-.add button:hover {
-   background-color: #ec2222f1;
-}
-
- .treinos{
-   margin-top: -45vh;
-   width: auto;
-   height: 100%;
+   text-align: center;
+   margin-top: 150px;
  }
 
-
- table {
-   width: 80%;
-   border-collapse: collapse;
-   color: var(--cor--bgwhite);
-   margin-top: 25px;
+ 
+ .add{
    justify-content: center;
-   margin-bottom: 30px;
-
-  
-}
-
-th, td {
-   border: 1px solid #dddddd25;
-   padding: 8px;
-   text-align: left;
-   margin-bottom: 20px;
-}
-
-th {
-   background-color:var(--cor--primeira2)
-}
+   margin-left: 150px;
+   margin-right: 2vh;
+  }
+ 
+  .add button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    color: #E1E1E1;
+    background-color: var(--cor--hover2);
+    padding: 0.62rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: urbanist;
+    font-weight: 600;
+ }
+ 
+ .add button:hover {
+    background-color: #ec2222f1;
+ }
 
  .site-footer{
     background-color: transparent;
    text-align: center;
    color: #E1E1E1;
 }
-
 
 @media screen and (max-width: 430px){
 
@@ -226,28 +233,14 @@ th {
    background-color: var(--cor--hover2);
 }
 
-.treinos {
-   width: 100%;
-   color: var(--cor--bgwhite);
-   margin-top: -55vh;
-}
+.titulos{
+   height: 80px;
+ }
 
-table {
-   width: 90%;
-   border-collapse: collapse;
-   color: var(--cor--bgwhite);
-   margin-top: 25px;
-   margin-left: 20px;
-  
-}
 
 
 .site-footer{
    display: none;
 }
-
-
-
-
 
 }

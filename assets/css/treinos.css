@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-   background-image: url(Imagens/backgroundDesk.svg);
+   background-image: url(/assets/img/backgroundDesk.svg);
    margin: 0;
    padding: 0;
    width: 100%;
    font-family: 'Urbanist';
+   opacity: 0;
+   transition: opacity 0.5s ease;
 }
 
+body.loaded {
+   opacity: 1;
+}
 
 :root {
    --cor--fundo: #141414;
@@ -15,6 +20,7 @@ body {
    --cor--primaria: #ffff;
    --cor--hover2: #dc143c;
    --cor--bgwhite: #E1E1E1;
+   --cor--primeira2: #740d21;
 }
 
 .app-header{
@@ -56,19 +62,92 @@ body {
    height: 500px;
  }
 
- .titulo, .info{
+ .titulo{
    color: var(--cor--bgwhite);
    font-family: urbanist;
    text-align: center;
  }
 
- .site-footer{
-    background-color: transparent;
-   text-align: center;
+
+ .add{
+  justify-content: center;
+  margin-left: 25vh;
+  margin-right: 2vh;
+ }
+
+ .add button {
+   width: 100%;
+   margin-top: 2.5rem;
+   border: none;
    color: #E1E1E1;
+   background-color: var(--cor--hover2);
+   padding: 0.62rem;
+   border-radius: 20px;
+   cursor: pointer;
+   font-family: urbanist;
+   font-weight: 600;
 }
 
-@media screen and (max-width: 400px){
+.add button:hover {
+   background-color: #ec2222f1;
+}
+
+ .treinos{
+   margin-top: -45vh;
+   width: auto;
+   height: 100%;
+ }
+
+
+ table {
+   width: 80%;
+   border-collapse: collapse;
+   color: var(--cor--bgwhite);
+   margin-top: 25px;
+   justify-content: center;
+   margin-bottom: 30px;
+
+  
+}
+
+th, td {
+   border: 1px solid #dddddd25;
+   padding: 8px;
+   text-align: left;
+   margin-bottom: 20px;
+}
+
+th {
+   background-color:var(--cor--primeira2)
+}
+
+.bottom-navbar {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   background-color: #333;
+   display: flex;
+   justify-content: space-around;
+   padding: 25px 0 ;
+   margin-bottom: 20px;
+   border-radius: 50px;
+   background-color: #2b2b2bf3;
+}
+
+.bottom-navbar a {
+   color: #fff;
+   text-decoration: none;
+   font-size: 24px;
+}
+
+.bottom-navbar a:hover {
+   color: #dc143c;
+}
+
+
+
+
+@media screen and (max-width: 430px){
 
    h1{
        text-align: center;
@@ -171,22 +250,26 @@ body {
    background-color: var(--cor--hover2);
 }
 
-
-.titulos{
-   height: 100px;
- }
-
-p{
+.treinos {
+   width: 100%;
    color: var(--cor--bgwhite);
-   font-weight:600;
-   text-align: center;
-   
+   margin-top: -55vh;
+}
+
+table {
+   width: 90%;
+   border-collapse: collapse;
+   color: var(--cor--bgwhite);
+   margin-top: 25px;
+   margin-left: 20px;
+  
 }
 
 
 .site-footer{
    display: none;
 }
+
 
 
 

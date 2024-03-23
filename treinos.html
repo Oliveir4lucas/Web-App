@@ -4,39 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treinos</title>
-    <link rel="stylesheet" href="treinos.css">
+    <link rel="stylesheet" href="/assets/css/treinos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!--MENUS-->
-    <nav class="app-header">
-        <input type="checkbox" class="faketrigger"/>
-
-
-        <div class="menu-lines">
-            <span></span>
-            <span></span>
-            <span></span>
+    <div class="content">
+        <div class="menu-sanduiche" onclick="toggleMenu()">
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
         </div>
+    
+        <!-- Restante do conteúdo -->
+        <nav class="app-header" id="menu">
             <ul>
-                 <li><a href="perfil.html">Início</a></li>
-                <li><a href="plano.html">Dieta</a></li>
-                <li><a href="medi.html">Medidas</a></li>
-                <li><a href="evolu.html">Evolução</a></li>
-                <li><a href="">Configurações</a></li>
-            </ul>
-    </nav>
-
-    <header class="site-header">
-        <nav class="menu">
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul>
-                <li><a href="perfil.html">Início</a></li>
-                <li><a href="conta.html">Conta</a></li>
+                <li><a href="">Início</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
-                
             </ul>
         </nav>
     </header>
@@ -194,11 +178,15 @@
 </div>
 
     
-    <footer class="site-footer">
-    <h2>Act Run</h2>
-    </div>
-    <p> © Desenvolvido por Lucas Oliveira - Todos os direitos reservados.</p>
+
+<footer class="bottom-navbar">
+    <a href="perfil.html"><i class="fas fa-home"></i></a>
+    <a href="medi.html"><i class="fa-solid fa-ruler"></i></a>
+    <a href="treinos.html"><i class="fa-solid fa-dumbbell"></i></a>
+    <a href="plano.html"><i class="fa-solid fa-utensils"></i></a>
+    <a href="conta.html"><i class="fas fa-user"></i></a>
 </footer>
-    
+    </div>
+<script src="/assets/js/effects.js"></script>
 </body>
 </html>
