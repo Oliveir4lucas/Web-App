@@ -16,14 +16,17 @@ self.addEventListener('install', event => {
 
        
         // Novos ícones
-        './assets/img/icon-72x72.png',
-        './assets/img/icon-96x96.png',
-        './assets/img/icon-128x128.png',
-        './assets/img/icon-144x144.png',
-        './assets/img/icon-152x152.png',
-        './assets/img/icon-192x192.png',
-        './assets/img/icon-384x384.png',
-        './assets/img/icon-512x512.png',
+        './assets/img/icon_29.png',
+        './assets/img/icon_40.png',
+        './assets/img/icon_57.png',
+        './assets/img/icon_58.png',
+        './assets/img/icon_60.png',
+        './assets/img/icon_80.png',
+        './assets/img/icon_87.png',
+        './assets/img/icon_114.png',
+        './assets/img/icon_120.png',
+        './assets/img/icon_180.png',
+        './assets/img/icon_1024.png',
       ]))
   );
 });

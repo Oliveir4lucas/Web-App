@@ -6,8 +6,13 @@ body {
    padding: 0;
    width: 100%;
    font-family: 'Urbanist';
+   opacity: 0;
+   transition: opacity 0.5s ease;
 }
 
+body.loaded {
+   opacity: 1;
+}
 
 :root {
    --cor--fundo: #141414;
@@ -15,61 +20,6 @@ body {
    --cor--primaria: #ffff;
    --cor--hover2: #dc143c;
    --cor--bgwhite: #E1E1E1;
-}
-
-.preloader.loaded {
-   opacity: 2;
-}
-
-.preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--cor--fundo); /* Cor de fundo do preloader */
-    display: flex;
-    flex-direction: column; /* Coluna para alinhar verticalmente */
-    justify-content: center;
-    align-items: center;
-    z-index: 9999; /* Garante que o preloader apareça sobre todo o conteúdo */
-    opacity: 0;
-   transition: opacity 1.5s ease;
-}
-
-.logo {
-    margin-bottom: 50px; /* Espaçamento entre o logo e o spinner */
-
-}
-
-.preloader img {
-    width: 200px; /* Ajuste o tamanho do logo conforme necessário */
-    height: auto;
-    opacity: 1; /* Começa com opacidade 1 */
-    transition: opacity 0.5s ease;
-}
-
-.spinner {
-    width: 50px;
-    height: 50px;
-    margin-top: 25px;
-    border: 5px solid #dc143c; /* Cor do spinner */
-    border-top-color: transparent;
-    border-radius: 50%;
-    animation: spin 1s linear infinite; /* Animação de rotação */
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-.content {
-    display: none; /* Oculta o conteúdo até que a página esteja totalmente carregada */
-}
-
-.app-header{
-    display: none;
 }
 
 .site-header {

@@ -1,53 +1,74 @@
 {
-  "name": "WorkOut",
+  "name": "WorkOut - O seu parceiro treino",
   "short_name": "WorkOut",
-  "theme_color": "#141414",
-  "background_color": "#fcfcfc",
-  "display": "standalone",
-  "start_url": "index.html",
-  "purpose": "maskable",
   "icons": [
-    [
-      {
-        "src": "assets/img/icon-72x72.png",
-        "sizes": "72x72",
-        "type": "image/png"
-      },
-      {
-        "src": "assets/img/icon-96x96.png",
-        "sizes": "96x96",
-        "type": "image/png"
-      },
-      {
-        "src": "assets/img/icon-128x128.png",
-        "sizes": "128x128",
-        "type": "image/png"
-      },
-      {
-        "src": "assets/img/icon-144x144.png",
-        "sizes": "144x144",
-        "type": "image/png"
-      },
-      {
-        "src": "assets/img/icon-152x152.png",
-        "sizes": "152x152",
-        "type": "image/png"
-      },
-      {
-        "src": "assets/img/icon-192x192.png",
-        "sizes": "192x192",
-        "type": "image/png"
-      },
-      {
-        "src": "assets/img/icon-384x384.png",
-        "sizes": "384x384",
-        "type": "image/png"
-      },
-      {
-        "src": "assets/img/icon-512x512.png",
-        "sizes": "512x512",
-        "type": "image/png"
-      }
-  ]
-  ]
+    {
+      "src": "assets/img/icon_29.png",
+      "sizes": "29x29",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/icon_40.png",
+      "sizes": "40x40",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/icon_57.png",
+      "sizes": "57x57",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/icon_58.png",
+      "sizes": "58x58",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/icon_60.png",
+      "sizes": "60x60",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/icon_80.png",
+      "sizes": "80x80",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/icon_87.png",
+      "sizes": "87x87",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/icon_114.png",
+      "sizes": "114x114",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/icon_120.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/icon_180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/icon_1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/img/icon_1024.png",
+      "sizes": "1024x1024",
+      "type": "image/gif",
+      "label": "Wonder Widgets"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#141414",
+  "theme_color": "#141414"
 }
