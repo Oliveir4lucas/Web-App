@@ -134,9 +134,17 @@ body {
  
  }
  
- .alt-login li img{
-    width: 80px;
-    cursor: pointer;
+
+ .logo-img{
+   width: auto;
+   height: auto;
+   
+ }
+
+ .micro, .apple, .google{
+   width: auto;
+   height: auto;
+
  }
  
  
