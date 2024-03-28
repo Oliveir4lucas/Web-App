@@ -53,7 +53,7 @@ body.loaded {
    display: flex;
    justify-content: space-around;
    padding: 25px 0 ;
-   margin-bottom: 20px;
+   margin-bottom: 50px;
    border-radius: 50px;
    background-color: #2b2b2bf3;
 }
