@@ -45,7 +45,8 @@
     {
       "src": "assets/img/icon_120.png",
       "sizes": "120x120",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "assets/img/icon_180.png",
