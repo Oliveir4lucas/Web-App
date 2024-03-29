@@ -17,7 +17,3 @@ window.addEventListener('load', function() {
     document.body.classList.add('loaded');
 });
 
-function toggleMenu() {
-    var menu = document.getElementById("menu");
-    menu.classList.toggle("aberto");
-}

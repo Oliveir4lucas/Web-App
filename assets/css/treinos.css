@@ -1,31 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-   background-image: url(/assets/img/backgroundDesk.svg);
+   background: rgb(0,0,0);
+   background: linear-gradient(160deg, rgb(17, 17, 17) 0%, rgba(29,29,29,1) 39%, rgb(53, 53, 53) 100%);
    margin: 0;
    padding: 0;
    width: 100%;
    font-family: 'Urbanist';
-   opacity: 0;
-   transition: opacity 0.5s ease;
-}
-
-body.loaded {
-   opacity: 1;
 }
 
 :root {
-   --cor--fundo: #141414;
-   --cor--hover: #2e2d2d;
-   --cor--primaria: #ffff;
-   --cor--hover2: #dc143c;
-   --cor--bgwhite: #E1E1E1;
-   --cor--primeira2: #740d21;
+   --cor--fundo: #141414; /* Fundo escuro */
+   --cor--hover: #2e2d2d; /* Hover mais escuro */
+   --cor--primaria: #ffffff; /* Texto principal em branco */
+   --cor--hover2: #dc143c; /* Hover mais claro */
+   --cor--bgwhite: #E1E1E1; /* Fundo branco */
+   --cor--primeira2: #740d21; /* Cor adicional */
 }
 
-.app-header{
-    display: none;
-}
 
  .titulo{
    height: 500px;
@@ -74,15 +66,13 @@ h3{
    font-size: 14px;
 }
 
-.site-header {
-  display: none;
-}
 
 
 .treinos {
 width: 100%;
 color: var(--cor--bgwhite);
 margin-top: -55vh;
+margin-bottom: 190px;
 }
 
 table {
@@ -113,15 +103,19 @@ th {
    display: flex;
    justify-content: space-around;
    padding: 25px 0 ;
-   margin-bottom: 20px;
+   margin-bottom: 45px;
    border-radius: 50px;
    background-color: #2b2b2bf3;
 }
 
 .bottom-navbar a {
-   color: #fff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
    text-decoration: none;
-   font-size: 24px;
+   color: #fff;
+   font-size: 18px;
 }
 
 .bottom-navbar a:hover {

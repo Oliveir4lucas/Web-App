@@ -5,52 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="/assets/css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <meta name="theme-color" content="#141414"/>
     <meta name="description" content="App de treinos">
 </head>
 <body>
-    <!--MENUS-->
-    <div class="content">
-    <nav class="app-header">
-        <input type="checkbox" class="faketrigger"/>
 
-
-        <div class="menu-lines">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-    </nav>
-    <header class="site-header">
-        <nav class="menu">
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul>
-                <li><a href="cad.html">Cadastre-se</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-    
-            </ul>
-        </nav>
-    </header>
 
     <div class="titulos">
+        <a href="index.html" class="back"><span class="back-button" onclick="window.history.back()"><i class="fa-solid fa-caret-left"></i></span></a>
         <H1>Login</H1>
     </div>
 
     <div class="container-login">
-        <div class="img-login">
-            <img src="/assets/img/login.svg" alt="academia">
-        </div>
+    
 
 
         <div class="dados-login">
             <div class="form">
-                <img src="/assets/img/logo.svg" class="logo-form">
+                <img src="/assets/img/logo.svg" class="logo-form" alt="login-img">
                 <h2>Bem-Vindo(a)!</h2>
                 <form>
                     <div class="input-box">
@@ -84,13 +59,11 @@
             </div>
         </div>
     </div>
-
-
+    <script src="/assets/js/effects.js"></script>
     <footer class="site-footer">
     <h2>Work Out</h2>
     <p> © Desenvolvido por Lucas Oliveira - Todos os direitos reservados.</p>
 </footer>
 </div>
-<script src="/assets/js/effects.js"></script>
 </body>
 </html>

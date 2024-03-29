@@ -20,44 +20,10 @@ body {
    --cor--bgwhite: #E1E1E1;
 }
 
-.app-header{
-    display: none;
-}
-
-.site-header {
-    background-color: transparent;
-    padding: 10px;
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    margin-left: 50px;
- }
-
- .menu ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
- }
-
- .menu ul li a {
-    color: var(--cor--primaria);
-    font-size: 2.5vh;
-    text-decoration: none;
-    display:inline-flex;
-    padding: 7px;
-    transition: background 0.7s;
- }
-
- .menu ul li a:hover {
-    background-color: var(--cor--hover2);
-    width: 150px;
-    border-bottom-right-radius: 8px;
-    border-top-right-radius: 8px;
- }
 
  .logo{
     margin-left: 90px;
-    margin-top: 290px;
+    margin-top: 300px;
  }
  
  .entrar-button button {
@@ -107,20 +73,21 @@ body {
  }
 
  .logar{
-    margin-top: 100px;
+    margin-top: 65px;
  }
 
  h3{
     color:var(--cor--bgwhite);
     text-align: center;
     margin-top: 40px;
+    align-items: center;
   }
 
 .alt-login{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: -28px;
+    margin-left: -36px;
  }
  
  .alt-login li{

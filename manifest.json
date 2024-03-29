@@ -71,5 +71,14 @@
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#141414",
-  "theme_color": "#141414"
-}
+  "theme_color": "#141414",
+
+    "splash_screen": {
+      "background_color": "#141414", 
+      "icons": [{
+        "src": "assets/img/logo.svg", 
+        "sizes": "209x42",
+        "type": "image/png"
+      }]
+    }
+  }

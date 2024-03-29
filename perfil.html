@@ -4,31 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="/assets//css/perfil.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <meta name="theme-color" content="#141414"/>
 </head>
 <body>
-    <!--MENUS-->
-    <div class="content">
-        <div class="menu-sanduiche" onclick="toggleMenu()">
-            <div class="linha"></div>
-            <div class="linha"></div>
-            <div class="linha"></div>
-        </div>
-    
-        <!-- Restante do conteúdo -->
-        <nav class="app-header" id="menu">
-            <ul>
-                <li><a href="perfil.html">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
-    </header>
+
     <h1>Perfil</h1>
     <div class="dados">
     <div class="perfil">
-        <img src="/assets/img/perfil.svg" class="foto">
+        <img src="/assets/img/perfil.svg" class="foto" alt="perfil">
     </div>
     
     
@@ -43,13 +30,40 @@
     </div>
 </div>
 
+<div class="opcoes">
+    <ul class="profile-menu">
+        <li><a href="evolu.html"><span></span>Evolução</span> <i class="fa-solid fa-dna"></i></a></li>
+        <li><a href="medi.html"><span>Medidas</span> <i class="fa-solid fa-ruler"></i></a></li>
+        <li><a href="#"><span>Configurações</span> <i class="fa-solid fa-gear"></i></a></li>
+        <li><a href="#"><span>Privacidade e Segurança</span> <i class="fa-solid fa-shield"></i></a></li>
+        <li><a href="#"><span>Notificações</span> <i class="fa-solid fa-bell"></i></a></li>
+        <li><a href="#"><span>Preferências</span> <i class="fa-solid fa-sliders"></i></a></li>
+        <li><a href="#"><span>Ajuda</span> <i class="fa-solid fa-circle-question"></i></a></li>
+        <li><a href="index.html"><span>Sair</span> <i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+      </ul>
+</div>
+
     
 <footer class="bottom-navbar">
-    <a href="home.html"><i class="fas fa-home"></i></a>
-    <a href="treinos.html"><i class="fa-solid fa-dumbbell"></i></a>
-    <a href="mapa.html"><i class="fa-solid fa-map" alt="mapa"></i></a>
-    <a href="plano.html"><i class="fa-solid fa-utensils"></i></a>
-    <a href="perfil.html"><i class="fas fa-user"></i></a>
+    <a href="home.html">
+        <i class="fas fa-home" alt="home"></i>
+        <span>Início</span>
+    </a>
+    <a href="treinos.html">
+        <i class="fa-solid fa-dumbbell" alt="treinos"></i>
+        <span>Treinos</span>
+    </a>
+    <a href="mapa.html">
+        <i class="fa-solid fa-map" alt="mapa"></i>
+        <span>Mapa</span>
+    </a>
+    <a href="plano.html">
+        <i class="fa-solid fa-utensils" alt="plano"></i>
+        <span>Plano</span>
+    </a>
+    <a href="perfil.html">
+        <i class="fas fa-user" alt="perfil"></i>
+        <span>Perfil</span>
 </footer>
 </div>
 <script src="/assets/js/effects.js"></script>

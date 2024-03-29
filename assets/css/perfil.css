@@ -1,17 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-   background-image: url(/assets/img/backgroundDesk.svg);
+   background: var(--cor--fundo);
    margin: 0;
    padding: 0;
    width: 100%;
    font-family: 'Urbanist';
-   opacity: 0;
-   transition: opacity 0.5s ease;
-}
-
-body.loaded {
-   opacity: 1;
 }
 
 :root {
@@ -21,47 +15,6 @@ body.loaded {
    --cor--hover2: #dc143c;
    --cor--bgwhite: #E1E1E1;
 }
-
-.app-header{
-    display: none;
-}
-
-.site-header {
-    background-color: transparent;
-    padding: 10px;
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    margin-left: 50px;
- }
-
- .notifications{
-  display: none;
-  }
-
- .menu ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
- }
-
- .menu ul li a {
-    color: var(--cor--primaria);
-    font-size: 2.5vh;
-    text-decoration: none;
-    display:inline-flex;
-    padding: 7px;
-    transition: background 0.7s;
- }
-
- .menu ul li a:hover {
-    background-color: var(--cor--hover2);
-    width: 150px;
-    border-bottom-right-radius: 8px;
-    border-top-right-radius: 8px;
- }
-
-/*PERFIL*/
 
 
  .perfil{
@@ -91,61 +44,45 @@ body.loaded {
  h1{
     text-align: center;
     margin-bottom: -5px;
+    text-align: center;
+    margin-bottom: -2px;
+    font-size: 22px;
+    margin-top: 25px;
+  
   }
 
  h3{
     display: flex;
     margin-left: 10px;
     text-align: center;
- }
-
-/*BOTÕES*/
-
-.botoes{
-    height: 500px;
-}
- .opcoes1{
     display: flex;
-    justify-content: center;
-    
+    margin-left: 10px;
+    text-align: center;
+    font-size: 14px;
  }
 
- .opcoes2{
-    display: flex;
-    justify-content: center;
-    margin-top: 35px;
+ .profile-menu {
+   list-style-type: none;
+   padding: 0;
+   
  }
- .treino, .diet, .med, .ft {
-   width: 385px;
-   height: 185px;
-   margin-left: 15px;
-   margin-right: 10px;
+ .profile-menu li {
+   overflow: hidden;
+   margin-bottom: 10px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+ .profile-menu li a {
+   display: block;
+   padding: 8px;
+   color: #ffffff;
+   background-color: #1d1c1c;
+   text-decoration: none;
    font-size: 18px;
-   cursor: pointer;
-   font-family: urbanist;
-   font-size: 26px;
-   color: var(--cor--bgwhite);
-   background-color: transparent; /* Alterado para tornar o botão invisível */
-   border: none; /* Removendo a borda */
-   padding: 0; /* Removendo o preenchimento */
-}
+ }
+ .profile-menu li a:hover {
+   background-color: #2c2c2c;
+ }
 
-.treino:hover{
-    opacity: 50%;
-    transition: 0.5s;
-}
-.diet:hover{
-    opacity: 50%;
-    transition: 0.5s;
-}
-.med:hover{
-    opacity: 50%;
-    transition: 0.5s;
-}
-.ft:hover{
-    opacity: 50%;
-    transition: 0.5s;
-}
 
 .bottom-navbar {
    position: fixed;
@@ -155,150 +92,23 @@ body.loaded {
    display: flex;
    justify-content: space-around;
    padding: 25px 0 ;
-   margin-bottom: 20px;
+   margin-bottom: 45px;
    border-radius: 50px;
    background-color: #2b2b2bf3;
 }
 
 .bottom-navbar a {
-   color: #fff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
    text-decoration: none;
-   font-size: 24px;
+   color: #fff;
+   font-size: 18px;
 }
-
 .bottom-navbar a:hover {
    color: #dc143c;
 }
 
 
-
    
-
-@media screen and (max-width: 430px){
-
-    h1{
-        text-align: center;
-        margin-bottom: -2px;
-        font-size: 22px;
-        margin-top: 25px;
-      
-      }
-    
-     h3{
-        display: flex;
-        margin-left: 10px;
-        text-align: center;
-        font-size: 14px;
-     }
-
-     .site-header {
-       display: none;
-     }
-
-     .perfil{
-      margin-top: -15px;
-     }
-
-     .foto{
-      margin-bottom: 25px;
-    }
-
-     .notifications{
-      color: #E1E1E1;
-      margin-left: 35vh;
-      margin-top: 20px;
-      font-size: 25px;
-      display: flex;
-     }
-
-/* Estilo do menu sanduíche */
-.menu-sanduiche {
-    display: block;
-    width: 40px;
-    height: 30px;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    cursor: pointer;
-    z-index: 9999;
-    transition: transform 0.3s ease; /* Transição para a rotação */
-}
-
-.menu-sanduiche .linha {
-    width: 100%;
-    height: 4px;
-    background-color: #ffffff;
-    margin: 6px auto;
-    transition: all 0.3s ease;
-    border-radius: 2px;
-}
-
-.menu-sanduiche.aberto .linha:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-
-.menu-sanduiche.aberto .linha:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-sanduiche.aberto .linha:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-}
-
-/* Estilo do menu (inicialmente oculto) */
-.app-header {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background-color: rgb(46, 46, 46);
-    z-index: 9998;
-    overflow: hidden;
-    padding-top: 80px;
-    border-radius: 0 20px;
-    transition: opacity 0.3s ease; /* Transição para a opacidade */
-}
-
-.app-header.aberto {
-    display: block;
-}
-
-.app-header ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-.app-header ul li {
-    margin-bottom: 20px;
-}
-
-.app-header ul li a {
-    color: #ffffff;
-    font-size: 22px;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.app-header ul li a:hover {
-    color: #dc143c;
-}
-
-
-.treino, .diet, .med, .ft{
-    width: 170px;
-    height: 185px;
-    margin-left: 15px;
-    margin-right: 10px;
- }
-
- .site-footer{
-    display: none;
- }
-
-
-
-}
