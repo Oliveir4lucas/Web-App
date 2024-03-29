@@ -76,7 +76,7 @@
     "splash_screen": {
       "background_color": "#141414", 
       "icons": [{
-        "src": "assets/img/logo.svg", 
+        "src": "assets/img/icon_120.png", 
         "sizes": "209x42",
         "type": "image/png"
       }]

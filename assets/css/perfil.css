@@ -61,6 +61,10 @@ body {
     font-size: 14px;
  }
 
+ .opcoes{
+   margin-bottom: 250px;
+ }
+
  .profile-menu {
    list-style-type: none;
    padding: 0;
